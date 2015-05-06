@@ -1,11 +1,23 @@
-<p>This page turns violet when you hold the V key.</p>
+//Katie Harold
+//CMP237
+//Color
+
+
+
+<p>This page turns violet when you press the V key.</p>
+<p>This page turns white when you press the C key.</p>
 <script>
   addEventListener("keydown", function(event) {
     if (event.keyCode == 86)
       document.body.style.background = "violet";
+      });
+  addEventListener("keydown", function(event){
+    if (event.keyCode == 67)
+      document.body.style.background = "white";
   });
-  addEventListener("keyup", function(event) {
-    if (event.keyCode == 86)
-      document.body.style.background = "";
-  });
+
+  //addEventListener("keyup", function(event) {
+    //if (event.keyCode == 86)
+     // document.body.style.background = "";
+  //});
 </script>
